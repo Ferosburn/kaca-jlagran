@@ -8,8 +8,9 @@ import BookFormPage from "./pages/BookFormPage";
 import UserFormPage from "./pages/UserFormPage";
 import CirculationFormPage from "./pages/CirculationFormPage";
 
-axios.defaults.baseURL =
-  "http://127.0.0.1:5001/kaca-jlagran-api/asia-southeast2/api/";
+// axios.defaults.baseURL =
+//   "http://127.0.0.1:5001/kaca-jlagran-api/asia-southeast2/api/";
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 
 function App() {
   return (
