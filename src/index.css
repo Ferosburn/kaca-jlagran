@@ -5,3 +5,8 @@
 th {
   @apply text-left
 }
+
+input,
+select {
+  @apply p-2 border rounded-lg
+}

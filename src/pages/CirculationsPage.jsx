@@ -65,7 +65,7 @@ export default function CirculationsPage() {
               <td>{index + 1}</td>
               <td>{transaction._id}</td>
               <td>{transaction.userId.name}</td>
-              <td>{transaction.bookId.title}</td>
+              <td>{transaction.bookId?.title || "Buku tidak tersedia"}</td>
               <td>
                 {format(
                   new Date(transaction.checkOutDate),
